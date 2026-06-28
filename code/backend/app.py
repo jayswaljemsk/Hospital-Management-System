@@ -10,6 +10,7 @@ ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
     r"https://.*\.ngrok-free\.app",
     r"https://.*\.ngrok\.io",
+    "https://hospital-management-system-rosy-theta.vercel.app"
 ]
 
 
