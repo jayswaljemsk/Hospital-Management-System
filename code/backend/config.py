@@ -10,7 +10,7 @@ class BaseConfig:
 
 
 class LocalDevelopmentConfig(BaseConfig):
-    SQLALCHEMY_DATABASE_URI = "sqlite:///database.sqlite3"
+    SQLALCHEMY_DATABASE_URI =  os.environ.get("DATABASE_URL")
     DEBUG = True
     SECRET_KEY = os.environ.get("SECRET_KEY")
     SECURITY_PASSWORD_SALT = os.environ.get("SECURITY_PASSWORD_SALT")
