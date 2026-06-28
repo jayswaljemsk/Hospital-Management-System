@@ -1,4 +1,5 @@
-const baseURL = (import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api").replace(/\/$/, "");
+// const baseURL = (import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api").replace(/\/$/, "");
+const baseURL = (import.meta.env.VITE_API_BASE_URL || "https://hospital-management-system-p9lk.vercel.app/api").replace(/\/$/, "");
 
 function buildUrl(endpoint) {
   const path = endpoint.startsWith("/") ? endpoint : `/${endpoint}`;
